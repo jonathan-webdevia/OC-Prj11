@@ -47,9 +47,6 @@ header nav a {
     font-size: 15px;
   }
 }
-header nav a.activePage {
-  text-decoration: underline;
-}
 @media (max-width: 768px) {
   header nav {
     gap: 10px;
@@ -83,6 +80,7 @@ header nav a.activePage {
     font-size: 24px;
     top: calc(50% - 12px);
     text-align: left;
+    color: red;
   }
 }
 @media (max-width: 768px) {
@@ -106,7 +104,6 @@ header nav a.activePage {
   font-weight: normal;
   color: white;
   padding: 10px 15px;
-  margin-bottom: 0;
 }
 .collapse h1.title button {
   display: block;
@@ -115,9 +112,6 @@ header nav a.activePage {
   font-size: 1.4em;
   color: white;
   font-weight: bold;
-}
-.collapse h1.title.deploy {
-  border-radius: 10px 10px 0 0;
 }
 .collapse div.description {
   background-color: #f6f6f6;
@@ -128,7 +122,7 @@ header nav a.activePage {
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,10 +131,6 @@ header nav a.activePage {
 .carousel button {
   z-index: 10;
   position: absolute;
-  font-size: 4em;
-  color: white;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
 }
 .carousel button.prev {
   left: 40px;
@@ -148,34 +138,15 @@ header nav a.activePage {
 .carousel button.next {
   right: 40px;
 }
-.carousel .picIndic {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  background-color: #ff6060;
-  color: white;
-  z-index: 10;
-  border-radius: 5px;
-}
 .carousel img {
   z-index: 9;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
   border-radius: 20px;
-}
-
-.rate i {
-  font-size: 1.5em;
-  color: #ff6060;
-}
-.rate i.unfill {
-  color: grey;
 }
 
 footer {
@@ -299,17 +270,6 @@ footer img {
     padding: 40px 0;
   }
 }
-.location .infoLocation {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-@media (max-width: 576px) {
-  .location .infoLocation {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 .location h1,
 .location h2 {
   color: #ff6060;
@@ -324,7 +284,6 @@ footer img {
 }
 .location .tagsContainer {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   list-style: none;
 }
@@ -338,26 +297,13 @@ footer img {
   background-color: #ff6060;
   color: white;
 }
-@media (max-width: 576px) {
-  .location .hostContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-}
 .location .host {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 10px;
 }
 .location .host p {
-  text-align: right;
+  text-align: left;
   margin-right: 5px;
-  color: #ff6060;
 }
 .location .host img {
   width: 50px;
@@ -385,4 +331,4 @@ footer img {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.index.css.map */

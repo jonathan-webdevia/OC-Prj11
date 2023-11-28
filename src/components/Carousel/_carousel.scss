@@ -1,0 +1,44 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  button {
+    z-index: 10;
+    position: absolute;
+    font-size: 4em;
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  button.prev {
+    left: 40px;
+  }
+  button.next {
+    right: 40px;
+  }
+  .picIndic {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: white;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  img {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+.collapse {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  h1.title {
+    border-radius: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 0;
+    button {
+      display: block;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      font-size: 1.4em;
+      color: white;
+      font-weight: bold;
+    }
+  }
+  h1.title.deploy {
+    border-radius: 10px 10px 0 0;
+  }
+  div.description {
+    background-color: $grey-bg;
+    padding: 10px 15px;
+    color: $primary-color;
+  }
+}

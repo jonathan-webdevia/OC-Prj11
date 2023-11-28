@@ -1,0 +1,17 @@
+@import "./utils/brekpoint";
+@import "./utils/colors";
+@import "./utils/reset";
+
+// import components
+@import "../components/Header/Header.scss";
+@import "../components/Banner/banner";
+@import "../components/collapse/collapse";
+@import "../components/Carousel/carousel";
+@import "../components/Rate/rate";
+@import "../components/Footer/footer";
+
+// import pages CSS
+@import "../pages/home/home.scss";
+@import "../pages/About/about";
+@import "../pages/Error/error";
+@import "../pages/Housing/housing";

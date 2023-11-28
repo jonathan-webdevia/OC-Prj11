@@ -1,0 +1,7 @@
+.about .collapsesContainer {
+  width: 68%;
+  margin: 40px auto;
+  @media (max-width: $md) {
+    width: calc(100% - 25px);
+  }
+}

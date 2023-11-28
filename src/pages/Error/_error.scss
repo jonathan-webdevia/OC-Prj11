@@ -1,0 +1,21 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 99px;
+  margin-bottom: 99px;
+  h1 {
+    font-size: 263px;
+    @media (max-width: $sm) {
+      font-size: 99px;
+      margin-top: 50px;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  * {
+    color: $primary-color;
+    display: block;
+    text-align: center;
+  }
+}
