@@ -150,14 +150,13 @@ header nav a.activePage {
 }
 .carousel .picIndic {
   position: absolute;
-  right: 30px;
+  width: 50px;
   bottom: 30px;
+  right: calc(50% - 25px);
   font-size: 1.2em;
-  padding: 10px 20px;
-  background-color: #ff6060;
   color: white;
   z-index: 10;
-  border-radius: 5px;
+  text-align: center;
 }
 .carousel img {
   z-index: 9;
