@@ -13,7 +13,6 @@ function Home() {
     const getData = async () => {
       const response = await axios.get("/logements.json");
       setDatas(response.data);
-      console.log(datas);
     };
     getData();
   }, []);
@@ -24,7 +23,7 @@ function Home() {
           <Banner imgSRC={bannerIMG} text="Chez vous, partout et ailleurs" />
           <div className="cardContainer">
             {datas.map((data, index) => {
-              return <Card data={data} inedx={index} />;
+              return <Card data={data} key={index} />;
             })}
           </div>
         </div>

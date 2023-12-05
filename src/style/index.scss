@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/media/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+* {
+  font-family: "Montserrat";
+}
+
 @import "./utils/brekpoint";
 @import "./utils/colors";
 @import "./utils/reset";
